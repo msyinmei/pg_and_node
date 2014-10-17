@@ -40,7 +40,7 @@ pg.connect(config, function(err, client, done){
         // Client object represents a connection object
         // Let's retrieve all books
         client.query("INSERT INTO books (title, author) VALUES ($1, $2)",
-					["The Great Gatsby", "Fitzgerald"], 
+					["The Great Gatsby", "Fitzgerald"],
 					function(err, resultSet){
 	        if (err) {
 	            console.log(err);
